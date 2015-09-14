@@ -1,0 +1,11 @@
+universe = vanilla
+Executable = condor.sh
+should_transfer_files = YES
+WhenToTransferOutput = ON_EXIT
+transfer_input_files = ../input/histos_MG5_SM_mm_LO.root, ../input/histos_MG5_SM_mm_ISR_ONLY.root, myMinexam, Cards/input_MG5_SIG_mm.txt, initParams/initParams_2_5_0_MG5_mm_LO.txt
+Output = /uscms_data/d2/iraklich/Zgamma/CMSSW_4_2_0/src/ElectroWeakAnalysis/MultiBosons/bin/MACROS/test/CONDOR/batch_$(cluster)_$(process).stdout
+Error  = /uscms_data/d2/iraklich/Zgamma/CMSSW_4_2_0/src/ElectroWeakAnalysis/MultiBosons/bin/MACROS/test/CONDOR/batch_$(cluster)_$(process).stderr
+Log    = /uscms_data/d2/iraklich/Zgamma/CMSSW_4_2_0/src/ElectroWeakAnalysis/MultiBosons/bin/MACROS/test/CONDOR/batch_$(cluster)_$(process).condor
+Requirements          = Memory >= 199 && OpSys == "LINUX" && (Arch != "DUMMY")
+Arguments = $(cluster) $(process) /uscms_data/d2/iraklich/Zgamma/CMSSW_4_2_0 input_MG5_SIG_mm.txt
+Queue 1

@@ -1,0 +1,12 @@
+inpFile		../input/histos_Data_Ele.root
+accFile		../input/histos_MG5_SM_ee_ISR_ONLY.root
+globalJ		0
+runType		data
+inputParamsB	0
+inputParamsF	initParams/testInput.txt
+startValue	5
+complex		1
+method		0
+lumi		50
+events		1
+doCut		0

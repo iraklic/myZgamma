@@ -1,0 +1,12 @@
+inpFile		histos_BAUR_NSM_ee.root
+accFile		histos_MG5_SM_ee_ISR_ONLY.root
+globalJ		2
+runType		data
+inputParamsB	0
+inputParamsF	initParams_2_5_0_BAUR_ee_NSM.txt
+startValue	5
+complex		0
+method		0
+lumi		12461.6
+events		-1
+doCut		0

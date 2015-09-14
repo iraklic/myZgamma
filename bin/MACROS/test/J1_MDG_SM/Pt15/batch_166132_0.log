@@ -1,0 +1,907 @@
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 X0           1.00000e+00  1.00000e-01     no limits
+     2 X1           1.00000e+00  1.00000e-01     no limits
+     3 X2           1.00000e+00  1.00000e-01     no limits
+     4 X3           1.00000e+00  1.00000e-01     no limits
+     5 X4           1.00000e+00  1.00000e-01     no limits
+     6 X5           1.00000e+00  1.00000e-01     no limits
+     7 X6           1.00000e+00  1.00000e-01     no limits
+     8 X7           1.00000e+00  1.00000e-01     no limits
+     9 X8           1.00000e+00  1.00000e-01     no limits
+    10 X9           1.00000e+00  1.00000e-01     no limits
+ **********
+ **    1 **FIX           1
+ **********
+ **********
+ **    2 **FIX           2
+ **********
+ **********
+ **    3 **FIX           3
+ **********
+ **********
+ **    4 **FIX           4
+ **********
+ **********
+ **    5 **FIX           5
+ **********
+ **********
+ **    6 **FIX           6
+ **********
+ **********
+ **    7 **FIX           7
+ **********
+ **********
+ **    8 **FIX           8
+ **********
+ **********
+ **    9 **FIX           9
+ **********
+ **********
+ **   10 **FIX          10
+ **********
+ **********
+ **   11 **RELEASE           1
+ **********
+                   PARAMETER    1  X0 RESTORED TO VARIABLE.
+ **********
+ **   12 **MIGRAD 
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2019.41 FROM MIGRAD    STATUS=INITIATE        4 CALLS           5 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           1.00000e+00   1.00000e-01   1.00000e-01   2.38735e+02
+   2  X1           1.00000e+00     fixed    
+   3  X2           1.00000e+00     fixed    
+   4  X3           1.00000e+00     fixed    
+   5  X4           1.00000e+00     fixed    
+   6  X5           1.00000e+00     fixed    
+   7  X6           1.00000e+00     fixed    
+   8  X7           1.00000e+00     fixed    
+   9  X8           1.00000e+00     fixed    
+  10  X9           1.00000e+00     fixed    
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2090.81 FROM MIGRAD    STATUS=CONVERGED      21 CALLS          22 TOTAL
+                     EDM=2.73107e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01   1.02626e-01   2.26412e-03   2.27732e-02
+   2  X1           1.00000e+00     fixed    
+   3  X2           1.00000e+00     fixed    
+   4  X3           1.00000e+00     fixed    
+   5  X4           1.00000e+00     fixed    
+   6  X5           1.00000e+00     fixed    
+   7  X6           1.00000e+00     fixed    
+   8  X7           1.00000e+00     fixed    
+   9  X8           1.00000e+00     fixed    
+  10  X9           1.00000e+00     fixed    
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  1.053e-02 
+ **********
+ **   13 **FIX           1
+ **********
+ **********
+ **   14 **FIX           2
+ **********
+ PARAMETER    2  ALREADY FIXED. IGNORED.
+ **********
+ **   15 **FIX           3
+ **********
+ PARAMETER    3  ALREADY FIXED. IGNORED.
+ **********
+ **   16 **FIX           4
+ **********
+ PARAMETER    4  ALREADY FIXED. IGNORED.
+ **********
+ **   17 **FIX           5
+ **********
+ PARAMETER    5  ALREADY FIXED. IGNORED.
+ **********
+ **   18 **FIX           6
+ **********
+ PARAMETER    6  ALREADY FIXED. IGNORED.
+ **********
+ **   19 **FIX           7
+ **********
+ PARAMETER    7  ALREADY FIXED. IGNORED.
+ **********
+ **   20 **FIX           8
+ **********
+ PARAMETER    8  ALREADY FIXED. IGNORED.
+ **********
+ **   21 **FIX           9
+ **********
+ PARAMETER    9  ALREADY FIXED. IGNORED.
+ **********
+ **   22 **FIX          10
+ **********
+ PARAMETER   10  ALREADY FIXED. IGNORED.
+ **********
+ **   23 **RELEASE           2
+ **********
+                   PARAMETER    2  X1 RESTORED TO VARIABLE.
+ **********
+ **   24 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2090.81 FROM MIGRAD    STATUS=INITIATE        4 CALLS          26 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.00000e+00   1.00000e-01   1.00000e-01  -4.74865e+02
+   3  X2           1.00000e+00     fixed    
+   4  X3           1.00000e+00     fixed    
+   5  X4           1.00000e+00     fixed    
+   6  X5           1.00000e+00     fixed    
+   7  X6           1.00000e+00     fixed    
+   8  X7           1.00000e+00     fixed    
+   9  X8           1.00000e+00     fixed    
+  10  X9           1.00000e+00     fixed    
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2159.18 FROM MIGRAD    STATUS=CONVERGED      18 CALLS          40 TOTAL
+                     EDM=4.56108e-09    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.28306e+00   3.37748e-02   7.66562e-04  -2.82784e-03
+   3  X2           1.00000e+00     fixed    
+   4  X3           1.00000e+00     fixed    
+   5  X4           1.00000e+00     fixed    
+   6  X5           1.00000e+00     fixed    
+   7  X6           1.00000e+00     fixed    
+   8  X7           1.00000e+00     fixed    
+   9  X8           1.00000e+00     fixed    
+  10  X9           1.00000e+00     fixed    
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  1.141e-03 
+ **********
+ **   25 **FIX           1
+ **********
+ PARAMETER    1  ALREADY FIXED. IGNORED.
+ **********
+ **   26 **FIX           2
+ **********
+ **********
+ **   27 **FIX           3
+ **********
+ PARAMETER    3  ALREADY FIXED. IGNORED.
+ **********
+ **   28 **FIX           4
+ **********
+ PARAMETER    4  ALREADY FIXED. IGNORED.
+ **********
+ **   29 **FIX           5
+ **********
+ PARAMETER    5  ALREADY FIXED. IGNORED.
+ **********
+ **   30 **FIX           6
+ **********
+ PARAMETER    6  ALREADY FIXED. IGNORED.
+ **********
+ **   31 **FIX           7
+ **********
+ PARAMETER    7  ALREADY FIXED. IGNORED.
+ **********
+ **   32 **FIX           8
+ **********
+ PARAMETER    8  ALREADY FIXED. IGNORED.
+ **********
+ **   33 **FIX           9
+ **********
+ PARAMETER    9  ALREADY FIXED. IGNORED.
+ **********
+ **   34 **FIX          10
+ **********
+ PARAMETER   10  ALREADY FIXED. IGNORED.
+ **********
+ **   35 **RELEASE           3
+ **********
+                   PARAMETER    3  X2 RESTORED TO VARIABLE.
+ **********
+ **   36 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2159.18 FROM MIGRAD    STATUS=INITIATE        4 CALLS          44 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.28306e+00     fixed    
+   3  X2           1.00000e+00   1.00000e-01   1.00000e-01   2.90372e+02
+   4  X3           1.00000e+00     fixed    
+   5  X4           1.00000e+00     fixed    
+   6  X5           1.00000e+00     fixed    
+   7  X6           1.00000e+00     fixed    
+   8  X7           1.00000e+00     fixed    
+   9  X8           1.00000e+00     fixed    
+  10  X9           1.00000e+00     fixed    
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2234.24 FROM MIGRAD    STATUS=CONVERGED      28 CALLS          68 TOTAL
+                     EDM=1.46399e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.28306e+00     fixed    
+   3  X2           3.21067e-01   1.21685e-01   2.79562e-03   1.40620e-03
+   4  X3           1.00000e+00     fixed    
+   5  X4           1.00000e+00     fixed    
+   6  X5           1.00000e+00     fixed    
+   7  X6           1.00000e+00     fixed    
+   8  X7           1.00000e+00     fixed    
+   9  X8           1.00000e+00     fixed    
+  10  X9           1.00000e+00     fixed    
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  1.481e-02 
+ **********
+ **   37 **FIX           1
+ **********
+ PARAMETER    1  ALREADY FIXED. IGNORED.
+ **********
+ **   38 **FIX           2
+ **********
+ PARAMETER    2  ALREADY FIXED. IGNORED.
+ **********
+ **   39 **FIX           3
+ **********
+ **********
+ **   40 **FIX           4
+ **********
+ PARAMETER    4  ALREADY FIXED. IGNORED.
+ **********
+ **   41 **FIX           5
+ **********
+ PARAMETER    5  ALREADY FIXED. IGNORED.
+ **********
+ **   42 **FIX           6
+ **********
+ PARAMETER    6  ALREADY FIXED. IGNORED.
+ **********
+ **   43 **FIX           7
+ **********
+ PARAMETER    7  ALREADY FIXED. IGNORED.
+ **********
+ **   44 **FIX           8
+ **********
+ PARAMETER    8  ALREADY FIXED. IGNORED.
+ **********
+ **   45 **FIX           9
+ **********
+ PARAMETER    9  ALREADY FIXED. IGNORED.
+ **********
+ **   46 **FIX          10
+ **********
+ PARAMETER   10  ALREADY FIXED. IGNORED.
+ **********
+ **   47 **RELEASE           4
+ **********
+                   PARAMETER    4  X3 RESTORED TO VARIABLE.
+ **********
+ **   48 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2234.24 FROM MIGRAD    STATUS=INITIATE        4 CALLS          72 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.28306e+00     fixed    
+   3  X2           3.21067e-01     fixed    
+   4  X3           1.00000e+00   1.00000e-01   1.00000e-01   1.34034e+02
+   5  X4           1.00000e+00     fixed    
+   6  X5           1.00000e+00     fixed    
+   7  X6           1.00000e+00     fixed    
+   8  X7           1.00000e+00     fixed    
+   9  X8           1.00000e+00     fixed    
+  10  X9           1.00000e+00     fixed    
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2236.52 FROM MIGRAD    STATUS=CONVERGED      15 CALLS          83 TOTAL
+                     EDM=1.94173e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.28306e+00     fixed    
+   3  X2           3.21067e-01     fixed    
+   4  X3           9.65821e-01   2.27549e-02   5.25455e-04   2.73863e-02
+   5  X4           1.00000e+00     fixed    
+   6  X5           1.00000e+00     fixed    
+   7  X6           1.00000e+00     fixed    
+   8  X7           1.00000e+00     fixed    
+   9  X8           1.00000e+00     fixed    
+  10  X9           1.00000e+00     fixed    
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  5.178e-04 
+ **********
+ **   49 **FIX           1
+ **********
+ PARAMETER    1  ALREADY FIXED. IGNORED.
+ **********
+ **   50 **FIX           2
+ **********
+ PARAMETER    2  ALREADY FIXED. IGNORED.
+ **********
+ **   51 **FIX           3
+ **********
+ PARAMETER    3  ALREADY FIXED. IGNORED.
+ **********
+ **   52 **FIX           4
+ **********
+ **********
+ **   53 **FIX           5
+ **********
+ PARAMETER    5  ALREADY FIXED. IGNORED.
+ **********
+ **   54 **FIX           6
+ **********
+ PARAMETER    6  ALREADY FIXED. IGNORED.
+ **********
+ **   55 **FIX           7
+ **********
+ PARAMETER    7  ALREADY FIXED. IGNORED.
+ **********
+ **   56 **FIX           8
+ **********
+ PARAMETER    8  ALREADY FIXED. IGNORED.
+ **********
+ **   57 **FIX           9
+ **********
+ PARAMETER    9  ALREADY FIXED. IGNORED.
+ **********
+ **   58 **FIX          10
+ **********
+ PARAMETER   10  ALREADY FIXED. IGNORED.
+ **********
+ **   59 **RELEASE           5
+ **********
+                   PARAMETER    5  X4 RESTORED TO VARIABLE.
+ **********
+ **   60 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2236.52 FROM MIGRAD    STATUS=INITIATE        4 CALLS          87 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.28306e+00     fixed    
+   3  X2           3.21067e-01     fixed    
+   4  X3           9.65821e-01     fixed    
+   5  X4           1.00000e+00   1.00000e-01   1.00000e-01  -1.15519e+02
+   6  X5           1.00000e+00     fixed    
+   7  X6           1.00000e+00     fixed    
+   8  X7           1.00000e+00     fixed    
+   9  X8           1.00000e+00     fixed    
+  10  X9           1.00000e+00     fixed    
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2241.85 FROM MIGRAD    STATUS=CONVERGED      16 CALLS          99 TOTAL
+                     EDM=5.78447e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.28306e+00     fixed    
+   3  X2           3.21067e-01     fixed    
+   4  X3           9.65821e-01     fixed    
+   5  X4           1.09031e+00   3.83979e-02   8.84712e-04   8.85808e-03
+   6  X5           1.00000e+00     fixed    
+   7  X6           1.00000e+00     fixed    
+   8  X7           1.00000e+00     fixed    
+   9  X8           1.00000e+00     fixed    
+  10  X9           1.00000e+00     fixed    
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  1.474e-03 
+ **********
+ **   61 **FIX           1
+ **********
+ PARAMETER    1  ALREADY FIXED. IGNORED.
+ **********
+ **   62 **FIX           2
+ **********
+ PARAMETER    2  ALREADY FIXED. IGNORED.
+ **********
+ **   63 **FIX           3
+ **********
+ PARAMETER    3  ALREADY FIXED. IGNORED.
+ **********
+ **   64 **FIX           4
+ **********
+ PARAMETER    4  ALREADY FIXED. IGNORED.
+ **********
+ **   65 **FIX           5
+ **********
+ **********
+ **   66 **FIX           6
+ **********
+ PARAMETER    6  ALREADY FIXED. IGNORED.
+ **********
+ **   67 **FIX           7
+ **********
+ PARAMETER    7  ALREADY FIXED. IGNORED.
+ **********
+ **   68 **FIX           8
+ **********
+ PARAMETER    8  ALREADY FIXED. IGNORED.
+ **********
+ **   69 **FIX           9
+ **********
+ PARAMETER    9  ALREADY FIXED. IGNORED.
+ **********
+ **   70 **FIX          10
+ **********
+ PARAMETER   10  ALREADY FIXED. IGNORED.
+ **********
+ **   71 **RELEASE           6
+ **********
+                   PARAMETER    6  X5 RESTORED TO VARIABLE.
+ **********
+ **   72 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2241.85 FROM MIGRAD    STATUS=INITIATE        2 CALLS         101 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.28306e+00     fixed    
+   3  X2           3.21067e-01     fixed    
+   4  X3           9.65821e-01     fixed    
+   5  X4           1.09031e+00     fixed    
+   6  X5           1.00000e+00   1.00000e-01   1.00000e-01  -1.89824e+02
+   7  X6           1.00000e+00     fixed    
+   8  X7           1.00000e+00     fixed    
+   9  X8           1.00000e+00     fixed    
+  10  X9           1.00000e+00     fixed    
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2310.71 FROM MIGRAD    STATUS=CONVERGED      17 CALLS         116 TOTAL
+                     EDM=1.84384e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.28306e+00     fixed    
+   3  X2           3.21067e-01     fixed    
+   4  X3           9.65821e-01     fixed    
+   5  X4           1.09031e+00     fixed    
+   6  X5           1.64668e+00   7.10992e-02   1.67736e-03   2.70092e-03
+   7  X6           1.00000e+00     fixed    
+   8  X7           1.00000e+00     fixed    
+   9  X8           1.00000e+00     fixed    
+  10  X9           1.00000e+00     fixed    
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  5.055e-03 
+ **********
+ **   73 **FIX           1
+ **********
+ PARAMETER    1  ALREADY FIXED. IGNORED.
+ **********
+ **   74 **FIX           2
+ **********
+ PARAMETER    2  ALREADY FIXED. IGNORED.
+ **********
+ **   75 **FIX           3
+ **********
+ PARAMETER    3  ALREADY FIXED. IGNORED.
+ **********
+ **   76 **FIX           4
+ **********
+ PARAMETER    4  ALREADY FIXED. IGNORED.
+ **********
+ **   77 **FIX           5
+ **********
+ PARAMETER    5  ALREADY FIXED. IGNORED.
+ **********
+ **   78 **FIX           6
+ **********
+ **********
+ **   79 **FIX           7
+ **********
+ PARAMETER    7  ALREADY FIXED. IGNORED.
+ **********
+ **   80 **FIX           8
+ **********
+ PARAMETER    8  ALREADY FIXED. IGNORED.
+ **********
+ **   81 **FIX           9
+ **********
+ PARAMETER    9  ALREADY FIXED. IGNORED.
+ **********
+ **   82 **FIX          10
+ **********
+ PARAMETER   10  ALREADY FIXED. IGNORED.
+ **********
+ **   83 **RELEASE           7
+ **********
+                   PARAMETER    7  X6 RESTORED TO VARIABLE.
+ **********
+ **   84 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2310.71 FROM MIGRAD    STATUS=INITIATE        4 CALLS         120 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.28306e+00     fixed    
+   3  X2           3.21067e-01     fixed    
+   4  X3           9.65821e-01     fixed    
+   5  X4           1.09031e+00     fixed    
+   6  X5           1.64668e+00     fixed    
+   7  X6           1.00000e+00   1.00000e-01   1.00000e-01   4.01770e+02
+   8  X7           1.00000e+00     fixed    
+   9  X8           1.00000e+00     fixed    
+  10  X9           1.00000e+00     fixed    
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2356.46 FROM MIGRAD    STATUS=CONVERGED      18 CALLS         134 TOTAL
+                     EDM=9.78008e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.28306e+00     fixed    
+   3  X2           3.21067e-01     fixed    
+   4  X3           9.65821e-01     fixed    
+   5  X4           1.09031e+00     fixed    
+   6  X5           1.64668e+00     fixed    
+   7  X6           7.57283e-01   3.88404e-02   9.16671e-04   1.13868e-02
+   8  X7           1.00000e+00     fixed    
+   9  X8           1.00000e+00     fixed    
+  10  X9           1.00000e+00     fixed    
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  1.509e-03 
+ **********
+ **   85 **FIX           1
+ **********
+ PARAMETER    1  ALREADY FIXED. IGNORED.
+ **********
+ **   86 **FIX           2
+ **********
+ PARAMETER    2  ALREADY FIXED. IGNORED.
+ **********
+ **   87 **FIX           3
+ **********
+ PARAMETER    3  ALREADY FIXED. IGNORED.
+ **********
+ **   88 **FIX           4
+ **********
+ PARAMETER    4  ALREADY FIXED. IGNORED.
+ **********
+ **   89 **FIX           5
+ **********
+ PARAMETER    5  ALREADY FIXED. IGNORED.
+ **********
+ **   90 **FIX           6
+ **********
+ PARAMETER    6  ALREADY FIXED. IGNORED.
+ **********
+ **   91 **FIX           7
+ **********
+ **********
+ **   92 **FIX           8
+ **********
+ PARAMETER    8  ALREADY FIXED. IGNORED.
+ **********
+ **   93 **FIX           9
+ **********
+ PARAMETER    9  ALREADY FIXED. IGNORED.
+ **********
+ **   94 **FIX          10
+ **********
+ PARAMETER   10  ALREADY FIXED. IGNORED.
+ **********
+ **   95 **RELEASE           8
+ **********
+                   PARAMETER    8  X7 RESTORED TO VARIABLE.
+ **********
+ **   96 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2356.46 FROM MIGRAD    STATUS=INITIATE        4 CALLS         138 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.28306e+00     fixed    
+   3  X2           3.21067e-01     fixed    
+   4  X3           9.65821e-01     fixed    
+   5  X4           1.09031e+00     fixed    
+   6  X5           1.64668e+00     fixed    
+   7  X6           7.57283e-01     fixed    
+   8  X7           1.00000e+00   1.00000e-01   1.00000e-01   5.65198e+01
+   9  X8           1.00000e+00     fixed    
+  10  X9           1.00000e+00     fixed    
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2358.63 FROM MIGRAD    STATUS=CONVERGED      18 CALLS         152 TOTAL
+                     EDM=6.1524e-08    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.28306e+00     fixed    
+   3  X2           3.21067e-01     fixed    
+   4  X3           9.65821e-01     fixed    
+   5  X4           1.09031e+00     fixed    
+   6  X5           1.64668e+00     fixed    
+   7  X6           7.57283e-01     fixed    
+   8  X7           9.21101e-01   5.47705e-02   1.29290e-03   6.40458e-03
+   9  X8           1.00000e+00     fixed    
+  10  X9           1.00000e+00     fixed    
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  3.000e-03 
+ **********
+ **   97 **FIX           1
+ **********
+ PARAMETER    1  ALREADY FIXED. IGNORED.
+ **********
+ **   98 **FIX           2
+ **********
+ PARAMETER    2  ALREADY FIXED. IGNORED.
+ **********
+ **   99 **FIX           3
+ **********
+ PARAMETER    3  ALREADY FIXED. IGNORED.
+ **********
+ **  100 **FIX           4
+ **********
+ PARAMETER    4  ALREADY FIXED. IGNORED.
+ **********
+ **  101 **FIX           5
+ **********
+ PARAMETER    5  ALREADY FIXED. IGNORED.
+ **********
+ **  102 **FIX           6
+ **********
+ PARAMETER    6  ALREADY FIXED. IGNORED.
+ **********
+ **  103 **FIX           7
+ **********
+ PARAMETER    7  ALREADY FIXED. IGNORED.
+ **********
+ **  104 **FIX           8
+ **********
+ **********
+ **  105 **FIX           9
+ **********
+ PARAMETER    9  ALREADY FIXED. IGNORED.
+ **********
+ **  106 **FIX          10
+ **********
+ PARAMETER   10  ALREADY FIXED. IGNORED.
+ **********
+ **  107 **RELEASE           9
+ **********
+                   PARAMETER    9  X8 RESTORED TO VARIABLE.
+ **********
+ **  108 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2358.63 FROM MIGRAD    STATUS=INITIATE        4 CALLS         156 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.28306e+00     fixed    
+   3  X2           3.21067e-01     fixed    
+   4  X3           9.65821e-01     fixed    
+   5  X4           1.09031e+00     fixed    
+   6  X5           1.64668e+00     fixed    
+   7  X6           7.57283e-01     fixed    
+   8  X7           9.21101e-01     fixed    
+   9  X8           1.00000e+00   1.00000e-01   1.00000e-01   1.77109e+01
+  10  X9           1.00000e+00     fixed    
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2359 FROM MIGRAD    STATUS=CONVERGED      15 CALLS         167 TOTAL
+                     EDM=2.43092e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.28306e+00     fixed    
+   3  X2           3.21067e-01     fixed    
+   4  X3           9.65821e-01     fixed    
+   5  X4           1.09031e+00     fixed    
+   6  X5           1.64668e+00     fixed    
+   7  X6           7.57283e-01     fixed    
+   8  X7           9.21101e-01     fixed    
+   9  X8           9.57673e-01   7.07797e-02   1.67580e-03   3.11524e-02
+  10  X9           1.00000e+00     fixed    
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  5.010e-03 
+ **********
+ **  109 **FIX           1
+ **********
+ PARAMETER    1  ALREADY FIXED. IGNORED.
+ **********
+ **  110 **FIX           2
+ **********
+ PARAMETER    2  ALREADY FIXED. IGNORED.
+ **********
+ **  111 **FIX           3
+ **********
+ PARAMETER    3  ALREADY FIXED. IGNORED.
+ **********
+ **  112 **FIX           4
+ **********
+ PARAMETER    4  ALREADY FIXED. IGNORED.
+ **********
+ **  113 **FIX           5
+ **********
+ PARAMETER    5  ALREADY FIXED. IGNORED.
+ **********
+ **  114 **FIX           6
+ **********
+ PARAMETER    6  ALREADY FIXED. IGNORED.
+ **********
+ **  115 **FIX           7
+ **********
+ PARAMETER    7  ALREADY FIXED. IGNORED.
+ **********
+ **  116 **FIX           8
+ **********
+ PARAMETER    8  ALREADY FIXED. IGNORED.
+ **********
+ **  117 **FIX           9
+ **********
+ **********
+ **  118 **FIX          10
+ **********
+ PARAMETER   10  ALREADY FIXED. IGNORED.
+ **********
+ **  119 **RELEASE          10
+ **********
+                   PARAMETER   10  X9 RESTORED TO VARIABLE.
+ **********
+ **  120 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2359 FROM MIGRAD    STATUS=INITIATE        4 CALLS         171 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.28306e+00     fixed    
+   3  X2           3.21067e-01     fixed    
+   4  X3           9.65821e-01     fixed    
+   5  X4           1.09031e+00     fixed    
+   6  X5           1.64668e+00     fixed    
+   7  X6           7.57283e-01     fixed    
+   8  X7           9.21101e-01     fixed    
+   9  X8           9.57673e-01     fixed    
+  10  X9           1.00000e+00   1.00000e-01   1.00000e-01  -1.15774e+02
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-2362.65 FROM MIGRAD    STATUS=CONVERGED      15 CALLS         182 TOTAL
+                     EDM=5.09445e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01     fixed    
+   2  X1           1.28306e+00     fixed    
+   3  X2           3.21067e-01     fixed    
+   4  X3           9.65821e-01     fixed    
+   5  X4           1.09031e+00     fixed    
+   6  X5           1.64668e+00     fixed    
+   7  X6           7.57283e-01     fixed    
+   8  X7           9.21101e-01     fixed    
+   9  X8           9.57673e-01     fixed    
+  10  X9           1.06235e+00   3.23883e-02   7.68263e-04  -9.85543e-02
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  1.049e-03 
+ **********
+ **  121 **RELEASE           1
+ **********
+                   PARAMETER    1  X0 RESTORED TO VARIABLE.
+ **********
+ **  122 **RELEASE           2
+ **********
+                   PARAMETER    2  X1 RESTORED TO VARIABLE.
+ **********
+ **  123 **RELEASE           3
+ **********
+                   PARAMETER    3  X2 RESTORED TO VARIABLE.
+ **********
+ **  124 **RELEASE           4
+ **********
+                   PARAMETER    4  X3 RESTORED TO VARIABLE.
+ **********
+ **  125 **RELEASE           5
+ **********
+                   PARAMETER    5  X4 RESTORED TO VARIABLE.
+ **********
+ **  126 **RELEASE           6
+ **********
+                   PARAMETER    6  X5 RESTORED TO VARIABLE.
+ **********
+ **  127 **RELEASE           7
+ **********
+                   PARAMETER    7  X6 RESTORED TO VARIABLE.
+ **********
+ **  128 **RELEASE           8
+ **********
+                   PARAMETER    8  X7 RESTORED TO VARIABLE.
+ **********
+ **  129 **RELEASE           9
+ **********
+                   PARAMETER    9  X8 RESTORED TO VARIABLE.
+ **********
+ **  130 **RELEASE          10
+ **********
+ PARAMETER   10  ALREADY VARIABLE. IGNORED.
+ **********
+ **  131 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-04
+ FCN=-2362.65 FROM MIGRAD    STATUS=INITIATE       26 CALLS         208 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           2.88588e-01   1.02626e-01   1.02626e-01  -4.75611e+01
+   2  X1           1.28306e+00   3.37748e-02   3.37748e-02  -3.17601e+00
+   3  X2           3.21067e-01   1.21685e-01   1.21685e-01  -3.90143e+01
+   4  X3           9.65821e-01   2.27549e-02   2.27549e-02   2.43378e+01
+   5  X4           1.09031e+00   3.83979e-02   3.83979e-02   9.33337e+01
+   6  X5           1.64668e+00   7.10992e-02   7.10992e-02  -7.60269e+01
+   7  X6           7.57283e-01   3.88404e-02   3.88404e-02  -4.90455e+00
+   8  X7           9.21101e-01   5.47705e-02   5.47705e-02   3.58010e+01
+   9  X8           9.57673e-01   7.07797e-02   7.07797e-02   4.15086e+01
+  10  X9           1.06235e+00   3.23883e-02   7.68263e-04  -9.84072e-02
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -4.9113e-03 -1.7219e-03  3.1820e-02  1.2323e-01  2.9066e-01  4.0253e-01  5.1509e-01  8.8399e-01  1.4792e+00  6.2801e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.011191 TO DIAGONAL.
+ FCN=-2424.9 FROM MIGRAD    STATUS=CONVERGED     522 CALLS         704 TOTAL
+                     EDM=3.59148e-06    STRATEGY= 1      ERR MATRIX NOT POS-DEF
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  X0           6.62863e-01   1.50957e-01   1.49828e-03   9.11795e-03
+   2  X1           1.25076e+00   1.62607e-01   6.15604e-04   7.03122e-03
+   3  X2           1.48747e+00   6.29238e-01   1.89187e-03   6.92501e-03
+   4  X3           6.68243e-01   2.84768e-01   7.15430e-04   2.93412e-02
+   5  X4           1.07653e+00   1.81692e-01   8.45473e-04   4.28735e-02
+   6  X5           1.98017e+00   2.69921e-01   1.42306e-03  -6.04024e-03
+   7  X6           3.09016e-01   4.42756e-01   4.33456e-03   7.00863e-03
+   8  X7           6.88721e-01   1.50882e-01   1.42852e-03   1.64928e-02
+   9  X8           8.38762e-01   5.69402e-01   3.79041e-03   8.51551e-03
+  10  X9           1.12773e+00   1.51597e-01   6.64051e-04   3.79231e-02
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR= 10    ERR DEF=1
+  2.279e-02 -1.445e-02 -4.303e-03 -1.302e-03  1.958e-03  2.508e-02 -8.649e-03  1.391e-02  3.267e-02 -1.435e-02 
+ -1.445e-02  2.644e-02  3.814e-04  4.371e-05 -2.180e-02 -4.109e-02  1.158e-03 -1.496e-02 -1.447e-03  2.303e-02 
+ -4.303e-03  3.814e-04  3.959e-01 -1.724e-01  2.599e-03 -2.780e-03  7.441e-02 -4.378e-03  2.156e-01 -5.783e-04 
+ -1.302e-03  4.371e-05 -1.724e-01  8.109e-02  2.449e-03 -2.159e-03 -5.386e-02 -1.638e-03 -1.042e-01  2.901e-04 
+  1.958e-03 -2.180e-02  2.599e-03  2.449e-03  3.301e-02  2.911e-02 -6.486e-03  2.376e-03 -4.350e-02 -1.705e-02 
+  2.508e-02 -4.109e-02 -2.780e-03 -2.159e-03  2.911e-02  7.286e-02  1.258e-02  2.550e-02  7.740e-03 -3.725e-02 
+ -8.649e-03  1.158e-03  7.441e-02 -5.386e-02 -6.486e-03  1.258e-02  1.960e-01 -5.288e-03  3.959e-02 -1.063e-03 
+  1.391e-02 -1.496e-02 -4.378e-03 -1.638e-03  2.376e-03  2.550e-02 -5.288e-03  2.277e-02  3.338e-02 -1.496e-02 
+  3.267e-02 -1.447e-03  2.156e-01 -1.042e-01 -4.350e-02  7.740e-03  3.959e-02  3.338e-02  3.242e-01 -1.446e-02 
+ -1.435e-02  2.303e-02 -5.783e-04  2.901e-04 -1.705e-02 -3.725e-02 -1.063e-03 -1.496e-02 -1.446e-02  2.298e-02 
+ERR MATRIX NOT POS-DEF
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8      9     10
+        1  0.91204   1.000 -0.589 -0.045 -0.030  0.071  0.615 -0.129  0.611  0.380 -0.627
+        2  0.98767  -0.589  1.000  0.004  0.001 -0.738 -0.936  0.016 -0.610 -0.016  0.934
+        3  0.99224  -0.045  0.004  1.000 -0.962  0.023 -0.016  0.267 -0.046  0.602 -0.006
+        4  0.99460  -0.030  0.001 -0.962  1.000  0.047 -0.028 -0.427 -0.038 -0.643  0.007
+        5  0.98129   0.071 -0.738  0.023  0.047  1.000  0.594 -0.081  0.087 -0.420 -0.619
+        6  0.97594   0.615 -0.936 -0.016 -0.028  0.594  1.000  0.105  0.626  0.050 -0.910
+        7  0.91369  -0.129  0.016  0.267 -0.427 -0.081  0.105  1.000 -0.079  0.157 -0.016
+        8  0.92027   0.611 -0.610 -0.046 -0.038  0.087  0.626 -0.079  1.000  0.389 -0.654
+        9  0.96159   0.380 -0.016  0.602 -0.643 -0.420  0.050  0.157  0.389  1.000 -0.168
+       10  0.98345  -0.627  0.934 -0.006  0.007 -0.619 -0.910 -0.016 -0.654 -0.168  1.000
+ ERR MATRIX NOT POS-DEF

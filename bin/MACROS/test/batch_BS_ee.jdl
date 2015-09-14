@@ -1,0 +1,11 @@
+universe = vanilla
+Executable = condor.sh
+should_transfer_files = YES
+WhenToTransferOutput = ON_EXIT
+transfer_input_files = ../input/histos_BS_Ele.root, ../input/histos_MG5_SM_ee_ISR_ONLY.root, myMinexam, Cards/input_BS_ee.txt, initParams/initParams_2_5_0_BS_ee_Z.txt
+Output = /uscms_data/d2/iraklich/Zgamma/CMSSW_4_2_0/src/ElectroWeakAnalysis/MultiBosons/bin/MACROS/test/CONDOR/batch_$(cluster)_$(process).stdout
+Error  = /uscms_data/d2/iraklich/Zgamma/CMSSW_4_2_0/src/ElectroWeakAnalysis/MultiBosons/bin/MACROS/test/CONDOR/batch_$(cluster)_$(process).stderr
+Log    = /uscms_data/d2/iraklich/Zgamma/CMSSW_4_2_0/src/ElectroWeakAnalysis/MultiBosons/bin/MACROS/test/CONDOR/batch_$(cluster)_$(process).condor
+Requirements          = Memory >= 199 && OpSys == "LINUX" && (Arch != "DUMMY")
+Arguments = $(cluster) $(process) /uscms_data/d2/iraklich/Zgamma/CMSSW_4_2_0 input_BS_ee.txt
+Queue 1

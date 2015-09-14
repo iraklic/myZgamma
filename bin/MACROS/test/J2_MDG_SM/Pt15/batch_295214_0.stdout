@@ -1,0 +1,18 @@
+
+CMSSW on Condor
+
+started at Mon Nov  7 10:26:50 CST 2011
+
+parameter set:
+CONDOR_CLUSTER: 295214
+CONDOR_PROCESS: 0
+CMSSW_DIR: /uscms_data/d2/iraklich/Zgamma/CMSSW_4_2_0
+RUN_DIR: /uscms_data/d2/iraklich/Zgamma/CMSSW_3_8_4_1/src/ElectroWeakAnalysis/MultiBosons/bin/MACROS/test/myMinexam
+PARAMETER_SET: output_Mu.txt
+NUM_EVENTS_PER_JOB: 
+
+Writing final parameter-set: batch_295214_0.py to RUN_DIR: /uscms_data/d2/iraklich/Zgamma/CMSSW_3_8_4_1/src/ElectroWeakAnalysis/MultiBosons/bin/MACROS/test/myMinexam
+
+run: myMinexam > batch_295214_0.log 2>&1\n
+
+finished at Mon Nov  7 23:43:06 CST 2011

@@ -1,0 +1,10 @@
+inpFile		../input/histos_BAUR_SM_mm.root
+accFile		../input/histos_MG5_SM_mm_ISR_ONLY.root
+globalJ		2
+runType		data
+inputFile(0/1)	0
+inputFile	params.txt
+startValue	5
+withtCorr	0
+complex		0
+outputFile	outParams

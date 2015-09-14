@@ -1,0 +1,12 @@
+inpFile		histos_BAUR_SM_mm_P.root
+accFile		histos_MG5_SM_mm_ISR_ONLY.root
+globalJ		2
+runType		data
+inputParamsB	1
+inputParamsF	initParams_2_5_0_BAUR_mm_SM_SIG_Z.txt
+startValue	5
+complex		1
+method		0
+lumi		4999.8
+events		995
+doCut		0

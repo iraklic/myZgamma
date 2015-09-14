@@ -1,0 +1,11 @@
+inpFile		histos_MG5_SM_mm_ISR_ONLY.root
+accFile		histos_MG5_SM_mm_ISR_ONLY.root
+globalJ		2
+runType		data
+inputParamsB	1
+inputParamsF	initParams_2_5_0_MG5_mm_ISR.txt
+startValue	5
+complex		0
+method		0
+lumi		42482
+events		-1

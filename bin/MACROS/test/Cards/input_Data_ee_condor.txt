@@ -1,0 +1,10 @@
+inpFile		histos_Data_Ele.root
+accFile		histos_MG5_SM_ee_ISR_ONLY.root
+globalJ		2
+runType		data
+inputParamsB	0
+inputParamsF	params.txt
+startValue	5
+complex		0
+outputFile	outParams
+method		CONDOR_METHOD

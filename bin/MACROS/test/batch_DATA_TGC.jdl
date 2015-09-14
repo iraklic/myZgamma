@@ -1,0 +1,11 @@
+universe = vanilla
+Executable = condor.sh
+should_transfer_files = YES
+WhenToTransferOutput = ON_EXIT
+transfer_input_files = histos_data_tree.root, myMinexam
+Output = /uscms_data/d2/iraklich/Zgamma/CMSSW_3_8_4_1/src/ElectroWeakAnalysis/MultiBosons/bin/MACROS/test/batch_$(cluster)_$(process).stdout
+Error  = /uscms_data/d2/iraklich/Zgamma/CMSSW_3_8_4_1/src/ElectroWeakAnalysis/MultiBosons/bin/MACROS/test/batch_$(cluster)_$(process).stderr
+Log    = /uscms_data/d2/iraklich/Zgamma/CMSSW_3_8_4_1/src/ElectroWeakAnalysis/MultiBosons/bin/MACROS/test/batch_$(cluster)_$(process).condor
+Requirements          = Memory >= 199 && OpSys == "LINUX" && (Arch != "DUMMY")
+Arguments = $(cluster) $(process) /uscms_data/d2/iraklich/Zgamma/CMSSW_3_8_4_1 /uscms_data/d2/iraklich/Zgamma/CMSSW_3_8_4_1/src/ElectroWeakAnalysis/MultiBosons/bin/MACROS/test/myMinexam output_J2_data_TGC.txt 10
+Queue 1

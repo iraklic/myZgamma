@@ -1,0 +1,10 @@
+<export>
+</export>
+<bin name="ZgammaAnalysis.exe" file="ZgammaAnalysis.cc">
+	<use name="root"/>
+	<use name="FWCore/FWLite"/>
+	<use name="FWCore/Framework"/>
+	<use name="DataFormats/FWLite"/>
+	<use name="DataFormats/PatCandidates"/>
+	<use name="PhysicsTools/FWLite"/>
+</bin>

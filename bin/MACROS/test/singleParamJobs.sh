@@ -1,0 +1,11 @@
+condor_submit batch_Data_ee.jdl
+condor_submit batch_MG5_NLO_ee.jdl
+condor_submit batch_MG5_GEN_ee.jdl
+condor_submit batch_MG5_BS_ee.jdl
+condor_submit batch_MG5_SIG_ee.jdl
+
+condor_submit batch_Data_mm.jdl
+condor_submit batch_MG5_NLO_mm.jdl
+condor_submit batch_MG5_GEN_mm.jdl
+condor_submit batch_MG5_BS_mm.jdl
+condor_submit batch_MG5_SIG_mm.jdl

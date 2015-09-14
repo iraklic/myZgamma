@@ -1,0 +1,336 @@
+#include <iostream>
+#include <map>
+#include <string>
+#include <stdio.h>
+
+#include <math.h>
+#include <vector>
+#include <TCanvas.h>
+#include <TF3.h>
+#include <TF1.h>
+#include <TF2.h>
+#include <TF12.h>
+#include <TH3.h>
+#include <TH2.h>
+#include <TGraph.h>
+#include <TLegend.h>
+#include <TROOT.h>
+#include <TStyle.h>
+#include <TLatex.h>
+#include <THStack.h>
+#include <TTree.h>
+#include <TFile.h>
+
+#include "../include/plotter.h"
+#include "../include/fitFunc.h"
+#include "../include/tChannel.h"
+
+using namespace std;
+
+//==========================================================================================
+double weightExtractor(double * var, double * par)
+	{
+	int c = 0;
+	double sum = 0;
+	for (int i = 0; i < 3; i++)
+		{
+		for (int j = 0; j < 7; j++)
+			{
+			sum += tChannel(var[1], 96, 148)*par[c]*pow(var[0], i)*pow(var[1], j);
+			c++;
+			}
+		}
+	sum*=tChannel(var[1], 96, 148);
+	return sum;
+	}
+
+int main()
+	{
+//	final output file
+	map<string, double> finalMap, mcfinalMap, mcCutfinalMap;
+	finalMap["cosThetaL"];
+	finalMap["thetaL"];
+	finalMap["cosThetaZ"];
+	finalMap["thetaZ"];
+	finalMap["phiL"];
+	finalMap["phiZ"];
+	finalMap["ZMass"];
+	finalMap["ZGMass"];
+	finalMap["weight"];
+
+	mcfinalMap["cosThetaL"];
+	mcfinalMap["thetaL"];
+	mcfinalMap["cosThetaZ"];
+	mcfinalMap["thetaZ"];
+	mcfinalMap["phiL"];
+	mcfinalMap["phiZ"];
+	mcfinalMap["ZMass"];
+	mcfinalMap["ZGMass"];
+	mcfinalMap["weight"];
+
+	mcCutfinalMap["cosThetaL"];
+	mcCutfinalMap["thetaL"];
+	mcCutfinalMap["cosThetaZ"];
+	mcCutfinalMap["thetaZ"];
+	mcCutfinalMap["phiL"];
+	mcCutfinalMap["phiZ"];
+	mcCutfinalMap["ZMass"];
+	mcCutfinalMap["ZGMass"];
+	mcCutfinalMap["weight"];
+
+	string rfileName = "../input/histos_MG5_SM_mm_ISR_ONLY.root";
+	string wfileName = "../input/histos_MG5_SM_mm_ISR_ONLY.root";
+
+	TFile * readFile = TFile::Open(rfileName.c_str(), "UPDATE");
+	TH2F * cosThetaZ_L = (TH2F*) readFile->Get("MC_cosThetaZ_L");
+
+	TFile * outFile = TFile::Open(wfileName.c_str(), "UPDATE");
+
+	cout << "Reading histogram from " << rfileName << " file" << endl;
+	cout << "Filling " << wfileName << " with weights" << endl;
+/*
+	map<string, TObject *> objMap;
+	objMap = objToMap(wfileName);
+
+	TTree * outTree		= new TTree("vars", "qq->Zgamma->llgamma angles and weights after selection and detector simulation");
+	TTree * mcCutoutTree	= new TTree("mcCutvars", "qq->Zgamma->llgamma mc angles and weights after selection");
+	TTree * mcoutTree	= new TTree("mcvars", "qq->Zgamma->llgamma mc angles and weights");
+
+//	check if the wights have alerady been filled into this file and replace if so
+	if (objMap.find("vars") != objMap.end())
+		{
+		outTree = (TTree*) objMap["vars"]; 
+		mcCutoutTree = (TTree*) objMap["mcCutvars"]; 
+		mcoutTree = (TTree*) objMap["mcvars"]; 
+
+		outTree->ResetBranchAddresses();
+		mcoutTree->ResetBranchAddresses();
+		mcCutoutTree->ResetBranchAddresses();
+		}
+
+	for (map<string, double>::iterator mi = mcfinalMap.begin(); mi != mcfinalMap.end(); mi++)
+		{
+		string name = mi->first;
+		string leafList = name + "/D";
+		mcoutTree->Branch(name.c_str(), &(mi->second), leafList.c_str());
+		}
+	for (map<string, double>::iterator mi = mcCutfinalMap.begin(); mi != mcCutfinalMap.end(); mi++)
+		{
+		string name = mi->first;
+		string leafList = name + "/D";
+		mcCutoutTree->Branch(name.c_str(), &(mi->second), leafList.c_str());
+		}
+	for (map<string, double>::iterator mi = finalMap.begin(); mi != finalMap.end(); mi++)
+		{
+		string name = mi->first;
+		string leafList = name + "/D";
+		outTree->Branch(name.c_str(), &(mi->second), leafList.c_str());
+		}
+*/
+
+//	==============================================================================
+//	Fill maps with hsitograms from root files
+	TH1::SetDefaultSumw2();
+	TH2::SetDefaultSumw2();
+
+	int npar = 21;
+	TF2 * fit2 = new TF2("fit2", weightExtractor, -1, 1, -1, 1, npar);
+	for (int i = 0; i < npar; i++)
+		fit2->SetParameter(i, 1);
+
+//	=====================================================================
+
+	TTree * anglesTree	= (TTree*) outFile->Get("angles");	// FOR RECO
+	TTree * mcCutanglesTree	= (TTree*) outFile->Get("mcCutangles");	// FOR GEN WITH CUTS
+	TTree * mcanglesTree	= (TTree*) outFile->Get("mcangles");	// FOR PURE GEN
+
+	double weight, mcweight, mcCutweight;
+
+	anglesTree->Branch("weights", &weight, "weights /D");
+	mcanglesTree->Branch("weights", &mcweight, "weights /D");
+	mcCutanglesTree->Branch("weights", &mcCutweight, "weights /D");
+
+//	TBranch * weights	= (TBranch*) anglesTree->GetBranch("weights");
+//	TBranch * mcweights	= (TBranch*) mcanglesTree->GetBranch("weights");
+//	TBranch * mcCutweights	= (TBranch*) mcCutanglesTree->GetBranch("weights");
+
+	cosThetaZ_L->Fit(fit2);
+
+	Long64_t nentries	= anglesTree->GetEntries();
+	Long64_t mcCutnentries	= mcCutanglesTree->GetEntries();
+	Long64_t mcnentries	= mcanglesTree->GetEntries();
+
+//	Declaration of leaf types
+	Double_t        cosThetaL;
+	Double_t        cosThetaZ;
+//	Double_t        phiL;
+//	Double_t        phiZ;
+//	Double_t        ZMass;
+//	Double_t        ZGMass;
+
+	Double_t        mc_cosThetaL;
+	Double_t        mc_cosThetaZ;
+//	Double_t        mc_phiL;
+//	Double_t        mc_phiZ;
+//	Double_t        mc_ZMass;
+//	Double_t        mc_ZGMass;
+
+	Double_t        mcCut_cosThetaL;
+	Double_t        mcCut_cosThetaZ;
+//	Double_t        mcCut_phiL;
+//	Double_t        mcCut_phiZ;
+//	Double_t        mcCut_ZMass;
+//	Double_t        mcCut_ZGMass;
+
+//	List of branches
+	TBranch        *b_cosThetaL;   //!
+	TBranch        *b_cosThetaZ;   //!
+//	TBranch        *b_phiL;   //!
+//	TBranch        *b_phiZ;   //!
+//	TBranch        *b_ZMass;   //!
+//	TBranch        *b_ZGMass;   //!
+
+	TBranch        *b_mc_cosThetaL;   //!
+	TBranch        *b_mc_cosThetaZ;   //!
+//	TBranch        *b_mc_phiL;   //!
+//	TBranch        *b_mc_phiZ;   //!
+//	TBranch        *b_mc_ZMass;   //!
+//	TBranch        *b_mc_ZGMass;   //!
+
+	TBranch        *b_mcCut_cosThetaL;   //!
+	TBranch        *b_mcCut_cosThetaZ;   //!
+//	TBranch        *b_mcCut_phiL;   //!
+//	TBranch        *b_mcCut_phiZ;   //!
+//	TBranch        *b_mcCut_ZMass;   //!
+//	TBranch        *b_mcCut_ZGMass;   //!
+
+//	fetching branches
+	b_cosThetaL = anglesTree->GetBranch("cosThetaL");
+	b_cosThetaZ = anglesTree->GetBranch("cosThetaZ");
+//	b_phiZ = anglesTree->GetBranch("phiZ");
+//	b_phiL = anglesTree->GetBranch("phiL");
+//	b_ZMass = anglesTree->GetBranch("ZMass");
+//	b_ZGMass = anglesTree->GetBranch("ZGMass");
+
+	b_mc_cosThetaL = mcanglesTree->GetBranch("cosThetaL");
+	b_mc_cosThetaZ = mcanglesTree->GetBranch("cosThetaZ");
+//	b_mc_phiZ = mcanglesTree->GetBranch("phiZ");
+//	b_mc_phiL = mcanglesTree->GetBranch("phiL");
+//	b_mc_ZMass = mcanglesTree->GetBranch("ZMass");
+//	b_mc_ZGMass = mcanglesTree->GetBranch("ZGMass");
+
+	b_mcCut_cosThetaL = mcCutanglesTree->GetBranch("cosThetaL");
+	b_mcCut_cosThetaZ = mcCutanglesTree->GetBranch("cosThetaZ");
+//	b_mcCut_phiZ = mcCutanglesTree->GetBranch("phiZ");
+//	b_mcCut_phiL = mcCutanglesTree->GetBranch("phiL");
+//	b_mcCut_ZMass = mcCutanglesTree->GetBranch("ZMass");
+//	b_mcCut_ZGMass = mcCutanglesTree->GetBranch("ZGMass");
+
+//	linking branch to variable
+	b_cosThetaL->SetAddress(&cosThetaL);
+	b_cosThetaZ->SetAddress(&cosThetaZ);
+//	b_phiL->SetAddress(&phiL);
+//	b_phiZ->SetAddress(&phiZ);
+//	b_ZMass->SetAddress(&ZMass);
+//	b_ZGMass->SetAddress(&ZGMass);
+
+	b_mc_cosThetaL->SetAddress(&mc_cosThetaL);
+	b_mc_cosThetaZ->SetAddress(&mc_cosThetaZ);
+//	b_mc_phiL->SetAddress(&mc_phiL);
+//	b_mc_phiZ->SetAddress(&mc_phiZ);
+//	b_mc_ZMass->SetAddress(&mc_ZMass);
+//	b_mc_ZGMass->SetAddress(&mc_ZGMass);
+
+	b_mcCut_cosThetaL->SetAddress(&mcCut_cosThetaL);
+	b_mcCut_cosThetaZ->SetAddress(&mcCut_cosThetaZ);
+//	b_mcCut_phiL->SetAddress(&mcCut_phiL);
+//	b_mcCut_phiZ->SetAddress(&mcCut_phiZ);
+//	b_mcCut_ZMass->SetAddress(&mcCut_ZMass);
+//	b_mcCut_ZGMass->SetAddress(&mcCut_ZGMass);
+
+	cout << "Variable ready and linked" << endl;
+
+	double  myPar[npar];
+	for (int i = 0; i < npar; i++)
+		myPar[i] = fit2->GetParameter(i);
+
+	for (Long64_t jentry = 0; jentry < nentries; jentry++)
+		{
+		anglesTree->GetEntry(jentry);
+
+		double myVar[2];
+		myVar[0] = cosThetaL;
+		myVar[1] = cosThetaZ;
+
+		weight = weightExtractor(myVar, myPar);
+//		finalMap["cosThetaZ"] = cosThetaZ;
+//		finalMap["cosThetaL"] = cosThetaL;
+//		finalMap["phiZ"] = phiZ;
+//		finalMap["phiL"] = phiL;
+//		finalMap["ZMass"] = ZMass;
+//		finalMap["ZGMass"] = ZGMass;
+
+//		outTree->Fill();
+//		weights->Fill();
+		anglesTree->Fill();
+		}
+	for (Long64_t jentry = 0; jentry < mcnentries; jentry++)
+		{
+		mcanglesTree->GetEntry(jentry);
+
+		double myVar[2];
+		myVar[0] = mc_cosThetaL;
+		myVar[1] = mc_cosThetaZ;
+
+		mcweight = weightExtractor(myVar, myPar);
+//		mcfinalMap["cosThetaZ"] = mc_cosThetaZ;
+//		mcfinalMap["cosThetaL"] = mc_cosThetaL;
+//		mcfinalMap["phiZ"] = mc_phiZ;
+//		mcfinalMap["phiL"] = mc_phiL;
+//		mcfinalMap["ZMass"] = mc_ZMass;
+//		mcfinalMap["ZGMass"] = mc_ZGMass;
+
+//		mcoutTree->Fill();
+//		mcweights->Fill();
+		mcanglesTree->Fill();
+		}
+	for (Long64_t jentry = 0; jentry < mcCutnentries; jentry++)
+		{
+		mcCutanglesTree->GetEntry(jentry);
+
+		double myVar[2];
+		myVar[0] = mcCut_cosThetaL;
+		myVar[1] = mcCut_cosThetaZ;
+
+		mcCutweight = weightExtractor(myVar, myPar);
+//		mcCutfinalMap["cosThetaZ"] = mcCut_cosThetaZ;
+//		mcCutfinalMap["cosThetaL"] = mcCut_cosThetaL;
+//		mcCutfinalMap["phiZ"] = mcCut_phiZ;
+//		mcCutfinalMap["phiL"] = mcCut_phiL;
+//		mcCutfinalMap["ZMass"] = mcCut_ZMass;
+//		mcCutfinalMap["ZGMass"] = mcCut_ZGMass;
+
+//		mcCutoutTree->Fill();
+//		mcCutweights->Fill();
+		mcCutanglesTree->Fill();
+		}
+
+//	outFile->cd();
+//	mcoutTree->Write();
+//	mcCutoutTree->Write();
+//	outTree->Write();
+
+//	weights->Write();
+//	mcweights->Write();
+//	mcCutweights->Write();
+
+	anglesTree->Write();
+	mcanglesTree->Write();
+	mcCutanglesTree->Write();
+
+	outFile->Close();
+	readFile->Close();
+
+	return 0;
+	}
+//==========================================================================================

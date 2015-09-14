@@ -1,0 +1,26 @@
+1       490000  CHECK POINT     100%    %
+2       489757  any Vertex      99.9504 %
+3       489757  good Vertex     100     %
+4       489757  good Tracks     100     %
+5       390635  at least 1 clean photon 79.761  %
+6       324623  at least 2 clean leptons        83.1014 %
+7       170625  required 2 good leptons 52.561  %
+8       167820  leptons with opposite charge    98.356  %
+9       167628  at least 1 pho > dR     99.8856 %
+10      144815  at least 1 good photon  86.3907 %
+11      144696  ZMass < 50      99.9178 %
+12      144647  ZgammaMass + ZMass > 200        99.9661 %
+
+1       490000  CHECK POINT     100%    %
+2       489734  any Vertex      99.9457 %
+3       489730  good Vertex     99.9992 %
+4       489730  good Tracks     100     %
+5       29444   at least 1 clean photon 6.01229 %
+6       9188    at least 2 clean leptons        31.205  %
+7       3034    required 2 good leptons 33.0213 %
+8       3014    leptons with opposite charge    99.3408 %
+9       2371    at least 1 pho > dR     78.6662 %
+10      2123    at least 1 good photon  89.5403 %
+11      1915    ZMass < 50      90.2025 %
+12      1726    ZgammaMass + ZMass > 200        90.1305 %
+

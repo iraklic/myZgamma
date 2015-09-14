@@ -1,0 +1,50 @@
+
+# DO NOT DELETE
+
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TFile.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TDirectoryFile.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TDirectory.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TNamed.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TObject.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/Rtypes.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/RConfig.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/RVersion.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/DllImport.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/Rtypeinfo.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/snprintf.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/strlcpy.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TGenericClassInfo.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TSchemaHelper.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TStorage.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TVersionCheck.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/Riosfwd.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TBuffer.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TString.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TRefCnt.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TMathBase.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TList.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TSeqCollection.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TCollection.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TIterator.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TDatime.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TUUID.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TUrl.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TMap.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/THashTable.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TTree.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TBranch.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TObjArray.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TAttFill.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TAttLine.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TAttMarker.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TArrayD.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TArray.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TArrayI.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TDataType.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TDictionary.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/Property.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TClass.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TObjString.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/TVirtualTreePlayer.h
+./ClassMaker_C.so: /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/cintdictversion.h /uscmst1/prod/sw/cms/slc5_amd64_gcc434/lcg/root/5.27.06b-cms14/include/RVersion.h
+ClassMaker_C__ROOTBUILDVERSION= 5.27/06b

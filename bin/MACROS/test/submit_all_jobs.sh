@@ -1,0 +1,14 @@
+condor_submit batch_BAUR_SM_ee.jdl
+condor_submit batch_BAUR_SM_mm.jdl
+condor_submit batch_BAUR_NSM_ee.jdl
+condor_submit batch_BAUR_NSM_mm.jdl
+condor_submit batch_Data_ee.jdl
+condor_submit batch_Data_mm.jdl
+condor_submit batch_BAUR_GEN_ee.jdl
+condor_submit batch_BAUR_GEN_mm.jdl
+condor_submit batch_BS_ee.jdl
+condor_submit batch_BS_mm.jdl
+condor_submit batch_MG5_LO_ee.jdl
+condor_submit batch_MG5_LO_mm.jdl
+condor_submit batch_MG5_NLO_ee.jdl
+condor_submit batch_MG5_NLO_mm.jdl

@@ -1,0 +1,61 @@
+Run A
+
+Eff EB Pt    15 to    20 =     0.18 +/-     0.03
+Eff EB Pt    20 to    25 =     0.14 +/-     0.03
+Eff EB Pt    25 to    30 =     0.10 +/-     0.04
+Eff EB Pt    30 to    35 =     0.18 +/-     0.07
+Eff EB Pt    35 to    40 =     0.31 +/-     0.11
+Eff EB Pt    40 to    60 =     0.10 +/-     0.06
+Eff EB Pt    60 to    90 =     0.19 +/-     0.10
+Eff EB Pt    90 to   500 =     0.21 +/-     0.17
+
+Eff EE Pt    15 to    20 =     0.34 +/-     0.05
+Eff EE Pt    20 to    25 =     0.23 +/-     0.06
+Eff EE Pt    25 to    30 =     0.15 +/-     0.07
+Eff EE Pt    30 to    35 =     0.25 +/-     0.11
+Eff EE Pt    35 to    40 =     0.28 +/-     0.15
+Eff EE Pt    40 to    60 =     0.24 +/-     0.13
+Eff EE Pt    60 to    90 =     0.11 +/-     0.14
+Eff EE Pt    90 to   500 =     0.00 +/-     0.64
+------------------------------------------------
+Run B
+
+Eff EB Pt    15 to    20 =     0.25 +/-     0.03
+Eff EB Pt    20 to    25 =     0.20 +/-     0.04
+Eff EB Pt    25 to    30 =     0.16 +/-     0.04
+Eff EB Pt    30 to    35 =     0.16 +/-     0.07
+Eff EB Pt    35 to    40 =     0.32 +/-     0.11
+Eff EB Pt    40 to    60 =     0.20 +/-     0.07
+Eff EB Pt    60 to    90 =     0.19 +/-     0.10
+Eff EB Pt    90 to   500 =     0.00 +/-     0.08
+
+Eff EE Pt    15 to    20 =     0.40 +/-     0.05
+Eff EE Pt    20 to    25 =     0.37 +/-     0.07
+Eff EE Pt    25 to    30 =     0.38 +/-     0.10
+Eff EE Pt    30 to    35 =     0.22 +/-     0.11
+Eff EE Pt    35 to    40 =     0.53 +/-     0.16
+Eff EE Pt    40 to    60 =     0.16 +/-     0.10
+Eff EE Pt    60 to    90 =     0.11 +/-     0.17
+Eff EE Pt    90 to   500 =     0.00 +/-     0.85
+------------------------------------------------
+Run A + B
+
+Eff EB Pt    15 to    20 =     0.22 +/-     0.02
+Eff EB Pt    20 to    25 =     0.17 +/-     0.03
+Eff EB Pt    25 to    30 =     0.13 +/-     0.03
+Eff EB Pt    30 to    35 =     0.17 +/-     0.05
+Eff EB Pt    35 to    40 =     0.31 +/-     0.08
+Eff EB Pt    40 to    60 =     0.14 +/-     0.04
+Eff EB Pt    60 to    90 =     0.17 +/-     0.07
+Eff EB Pt    90 to   120 =     0.00 +/-     0.05
+Eff EB Pt   120 to   500 =     0.29 +/-     0.21
+
+Eff EE Pt    15 to    20 =     0.40 +/-     0.03
+Eff EE Pt    20 to    25 =     0.29 +/-     0.04
+Eff EE Pt    25 to    30 =     0.24 +/-     0.06
+Eff EE Pt    30 to    35 =     0.24 +/-     0.08
+Eff EE Pt    35 to    40 =     0.40 +/-     0.11
+Eff EE Pt    40 to    60 =     0.19 +/-     0.08
+Eff EE Pt    60 to    90 =     0.11 +/-     0.11
+Eff EE Pt    90 to   120 =     0.00 +/-     0.20
+Eff EE Pt   120 to   500 =     0.00 +/-     0.68
